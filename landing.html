@@ -406,6 +406,37 @@
 
     .contact-box a.email-link:hover { border-color: var(--primary-light); }
 
+    /* AI NOTICE */
+    .ai-notice-section {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .ai-notice-inner {
+      max-width: 820px;
+      margin: 0 auto;
+      background: rgba(79,70,229,0.08);
+      border: 1px solid rgba(79,70,229,0.35);
+      border-radius: 14px;
+      padding: 28px 32px;
+    }
+
+    .ai-notice-inner h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #818cf8;
+      margin-bottom: 10px;
+    }
+
+    .ai-notice-inner p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
     /* FOOTER */
     footer {
       border-top: 1px solid var(--border);
@@ -417,6 +448,7 @@
 
     footer a { color: var(--text-muted); text-decoration: none; }
     footer a:hover { color: var(--text); }
+    footer .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 10px; }
 
     /* RESPONSIVE */
     @media (max-width: 640px) {
@@ -520,6 +552,14 @@
       </div>
     </div>
   </section>
+
+  <!-- AI DISCLAIMER -->
+  <div class="ai-notice-section">
+    <div class="ai-notice-inner">
+      <h3 data-i18n="ai.title"></h3>
+      <p data-i18n="ai.desc"></p>
+    </div>
+  </div>
 
   <!-- HOW IT WORKS -->
   <section id="how" style="background: var(--bg2); max-width: 100%; padding: 80px 24px;">
@@ -648,6 +688,10 @@
   <!-- FOOTER -->
   <footer>
     <p>© 2026 EduMate AI · <a href="mailto:edu.mate.ai.cap@gmail.com">edu.mate.ai.cap@gmail.com</a></p>
+    <div class="footer-links">
+      <a href="index.html" data-i18n="footer.privacy"></a>
+      <a href="account-deletion.html" data-i18n="footer.deletion"></a>
+    </div>
   </footer>
 
   <script>
@@ -725,6 +769,10 @@
         "pricing.table.collection": "Resumen de colección (base + 1 por doc adicional)",
         "contact.title": "¿Tenés preguntas?",
         "contact.subtitle": "Escribinos por cualquier consulta sobre la app, soporte técnico o sugerencias.",
+        "ai.title": "⚠ Aviso sobre contenido generado por IA",
+        "ai.desc": "EduMateAI usa inteligencia artificial (OpenAI GPT-4o-mini) para generar resúmenes, flashcards y quizzes a partir del texto de tus documentos. El contenido generado es de carácter educativo y puede contener errores, omisiones o inexactitudes. Verificá siempre la información importante con fuentes académicas autorizadas.",
+        "footer.privacy": "Política de Privacidad",
+        "footer.deletion": "Eliminar cuenta",
       },
       en: {
         "nav.features": "Features",
@@ -799,6 +847,10 @@
         "pricing.table.collection": "Collection summary (base + 1 per additional doc)",
         "contact.title": "Have questions?",
         "contact.subtitle": "Reach out for any questions about the app, technical support or suggestions.",
+        "ai.title": "⚠ AI-generated content disclaimer",
+        "ai.desc": "EduMateAI uses artificial intelligence (OpenAI GPT-4o-mini) to generate summaries, flashcards and quizzes from your document text. Generated content is provided for educational purposes only and may contain errors, omissions or inaccuracies. Always verify important information with authoritative academic sources.",
+        "footer.privacy": "Privacy Policy",
+        "footer.deletion": "Delete Account",
       }
     };
 

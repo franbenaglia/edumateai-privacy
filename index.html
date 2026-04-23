@@ -21,13 +21,15 @@
     code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
     footer { border-top: 1px solid rgba(127,127,127,.25); padding: 18px 16px; }
     .langtag { font-size: 12px; padding: 3px 8px; border: 1px solid rgba(127,127,127,.35); border-radius: 999px; display: inline-block; margin-left: 8px; }
+    .ai-notice { background: rgba(79,70,229,0.08); border: 1px solid rgba(79,70,229,0.3); border-radius: 10px; padding: 14px 18px; margin: 18px 0 8px; }
+    .ai-notice strong { color: #4f46e5; }
   </style>
 </head>
 
 <body>
   <header>
     <h1>EduMateAI – Privacy Policy / Política de Privacidad</h1>
-    <div class="muted">Last updated / Última actualización: <strong>March 2026</strong></div>
+    <div class="muted">Last updated / Última actualización: <strong>April 2026</strong></div>
     <nav>
       <a class="button" href="#en">English</a>
       <a class="button" href="#es">Español</a>
@@ -40,61 +42,85 @@
       <h2>Privacy Policy <span class="langtag">EN</span></h2>
       <p>
         EduMateAI is an educational application developed by <strong>Francisco Arce Benaglia</strong> (Argentina).
-        If you have privacy questions, contact: <strong>francisco.arcebenaglia@gmail.com</strong>.
+        If you have privacy questions, contact: <strong>edu.mate.ai.cap@gmail.com</strong>.
       </p>
 
       <h3>1) Information we collect</h3>
       <ul>
         <li><strong>Account information:</strong> email address, name/profile information provided by the user, and basic profile data when signing in with Google (OAuth2).</li>
-        <li><strong>User-generated content:</strong> text extracted from images taken with the camera, and text content from uploaded PDF/Word documents used to generate summaries and exam-style questions.</li>
-        <li><strong>In-app purchases:</strong> purchase-related information for credits processed via Google Play Billing. We do not store payment card data.</li>
+        <li><strong>User-generated content:</strong> text extracted from images taken with the camera, and text content from uploaded PDF/Word documents used to generate summaries, flashcards and quizzes.</li>
+        <li><strong>In-app purchases:</strong> purchase-related information for credits processed via Google Play Billing or Stripe. We do not store payment card data.</li>
+        <li><strong>Camera access:</strong> the app requests permission to use the device camera solely to photograph documents and notes for text extraction (OCR). No photos are stored on our servers — only the extracted text is retained.</li>
       </ul>
-      <p><strong>Images note:</strong> EduMateAI does not store original images on our servers. Images may be processed to extract text, and only the extracted/processed text is stored.</p>
+      <p><strong>Images note:</strong> EduMateAI does not store original images on our servers. Images are processed locally or in transit to extract text, and only the resulting text is stored.</p>
 
       <h3>2) How we use information</h3>
       <ul>
-        <li>To provide the core features: text extraction, summaries, and exam-style questions</li>
+        <li>To provide the core features: text extraction, AI-generated summaries, flashcards and quizzes</li>
         <li>To authenticate users and manage accounts</li>
         <li>To manage credits and purchases</li>
         <li>To maintain security and prevent abuse</li>
       </ul>
 
-      <h3>3) Data storage and security</h3>
+      <h3>3) Artificial intelligence and generated content</h3>
+      <div class="ai-notice">
+        <strong>⚠ AI Content Disclaimer</strong><br>
+        EduMateAI uses artificial intelligence (OpenAI GPT-4o-mini) to automatically generate summaries, flashcards and quizzes from user-provided text. AI-generated content is provided for educational assistance purposes only and <strong>may contain errors, omissions or inaccuracies</strong>. Users should always verify important information with authoritative academic sources. EduMateAI is not responsible for decisions made based solely on AI-generated content.
+      </div>
+      <p>
+        To generate content, the text extracted from your documents is sent to <strong>OpenAI's API</strong>. OpenAI processes this text according to its own
+        <a href="https://openai.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
+        Original images are never sent to OpenAI — only extracted text.
+      </p>
+
+      <h3>4) Data storage and security</h3>
       <p>
         Data is stored on secure infrastructure hosted on <strong>Amazon Web Services (AWS)</strong>.
         We use reasonable technical and organizational safeguards (e.g., encrypted connections such as HTTPS) to protect data.
       </p>
 
-      <h3>4) Sharing of information</h3>
+      <h3>5) Sharing of information</h3>
       <p>We do not sell or rent personal data. We may share information only with service providers necessary to operate the app, such as:</p>
       <ul>
-        <li>Amazon Web Services (hosting/infrastructure)</li>
-        <li>Google OAuth2 (authentication)</li>
-        <li>Google Play Billing (payments for credits)</li>
+        <li><strong>Amazon Web Services</strong> – hosting and infrastructure</li>
+        <li><strong>OpenAI</strong> – AI content generation (extracted text only); <a href="https://openai.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+        <li><strong>Google OAuth2</strong> – optional authentication</li>
+        <li><strong>Google Play Billing</strong> – in-app credit purchases (Google Play version)</li>
+        <li><strong>Stripe</strong> – in-app credit purchases (direct/web version); <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
       </ul>
 
-      <h3>5) Children and education</h3>
+      <h3>6) Children and education</h3>
       <p>
         EduMateAI is not specifically directed to children under 13. However, it may be used by students.
         If a parent/guardian believes a child provided personal information without consent, they may contact us to request deletion.
       </p>
 
-      <h3>6) Data retention</h3>
+      <h3>7) Data retention</h3>
       <p>
-        We retain stored text and account data while the user’s account remains active or as needed to provide the service,
-        unless a deletion request is received.
+        We retain stored text and account data while the user's account remains active or as needed to provide the service,
+        unless a deletion request is received. Purchase-related records may be retained for up to 5 years as required by applicable financial regulations.
       </p>
 
-      <h3>7) Account and data deletion</h3>
+      <h3>8) Your rights</h3>
+      <p>You have the right to:</p>
+      <ul>
+        <li><strong>Access</strong> the personal data we hold about you</li>
+        <li><strong>Correct</strong> inaccurate or incomplete data</li>
+        <li><strong>Delete</strong> your account and associated data</li>
+        <li><strong>Object</strong> to certain processing of your data</li>
+      </ul>
+      <p>To exercise these rights, contact us at <strong>edu.mate.ai.cap@gmail.com</strong> or visit our <a href="account-deletion.html">Account Deletion page</a>.</p>
+
+      <h3>9) Account and data deletion</h3>
       <p>
         You can request deletion of your account and associated stored data by emailing:
-        <strong>francisco.arcebenaglia@gmail.com</strong>.
-        We may request additional information to verify your identity before completing the deletion request.
+        <strong>edu.mate.ai.cap@gmail.com</strong>.
+        See our <a href="account-deletion.html">Account Deletion page</a> for full details.
       </p>
 
-      <h3>8) Changes to this policy</h3>
+      <h3>10) Changes to this policy</h3>
       <p>
-        We may update this policy from time to time. Updates will be posted on this page with a revised “Last updated” date.
+        We may update this policy from time to time. Updates will be posted on this page with a revised "Last updated" date.
       </p>
     </section>
 
@@ -103,67 +129,91 @@
       <h2>Política de Privacidad <span class="langtag">ES</span></h2>
       <p>
         EduMateAI es una aplicación educativa desarrollada por <strong>Francisco Arce Benaglia</strong> (Argentina).
-        Consultas de privacidad: <strong>francisco.arcebenaglia@gmail.com</strong>.
+        Consultas de privacidad: <strong>edu.mate.ai.cap@gmail.com</strong>.
       </p>
 
       <h3>1) Información que recopilamos</h3>
       <ul>
         <li><strong>Información de cuenta:</strong> correo electrónico, nombre/datos de perfil provistos por el usuario y datos básicos del perfil cuando se inicia sesión con Google (OAuth2).</li>
-        <li><strong>Contenido generado por el usuario:</strong> texto extraído de imágenes capturadas con la cámara y texto contenido en documentos PDF/Word subidos para generar resúmenes y preguntas tipo examen.</li>
-        <li><strong>Compras dentro de la app:</strong> información relacionada con la compra de créditos mediante Google Play Billing. No almacenamos datos de tarjeta.</li>
+        <li><strong>Contenido generado por el usuario:</strong> texto extraído de imágenes capturadas con la cámara y texto de documentos PDF/Word subidos para generar resúmenes, flashcards y quizzes.</li>
+        <li><strong>Compras dentro de la app:</strong> información relacionada con la compra de créditos mediante Google Play Billing o Stripe. No almacenamos datos de tarjeta.</li>
+        <li><strong>Acceso a la cámara:</strong> la app solicita permiso para usar la cámara del dispositivo únicamente para fotografiar documentos y apuntes con fines de extracción de texto (OCR). Las fotos no se almacenan en nuestros servidores; solo se conserva el texto extraído.</li>
       </ul>
-      <p><strong>Nota sobre imágenes:</strong> EduMateAI no almacena imágenes originales en el servidor. Las imágenes pueden procesarse para extraer texto y solo se almacena el texto extraído/procesado.</p>
+      <p><strong>Nota sobre imágenes:</strong> EduMateAI no almacena imágenes originales en el servidor. Las imágenes se procesan en tránsito para extraer texto, y solo el texto resultante es almacenado.</p>
 
       <h3>2) Cómo utilizamos la información</h3>
       <ul>
-        <li>Para brindar las funciones principales: extracción de texto, resúmenes y preguntas tipo examen</li>
+        <li>Para brindar las funciones principales: extracción de texto, resúmenes, flashcards y quizzes generados por IA</li>
         <li>Para autenticar usuarios y administrar cuentas</li>
         <li>Para gestionar créditos y compras</li>
         <li>Para mantener la seguridad y prevenir abusos</li>
       </ul>
 
-      <h3>3) Almacenamiento y seguridad</h3>
+      <h3>3) Inteligencia artificial y contenido generado</h3>
+      <div class="ai-notice">
+        <strong>⚠ Aviso sobre contenido generado por IA</strong><br>
+        EduMateAI utiliza inteligencia artificial (OpenAI GPT-4o-mini) para generar automáticamente resúmenes, flashcards y quizzes a partir del texto provisto por el usuario. El contenido generado por IA se ofrece únicamente como asistencia educativa y <strong>puede contener errores, omisiones o inexactitudes</strong>. Los usuarios deben verificar la información importante con fuentes académicas autorizadas. EduMateAI no se responsabiliza por decisiones tomadas basándose exclusivamente en contenido generado por IA.
+      </div>
+      <p>
+        Para generar contenido, el texto extraído de tus documentos se envía a la <strong>API de OpenAI</strong>. OpenAI procesa dicho texto según su propia
+        <a href="https://openai.com/privacy" target="_blank" rel="noopener">Política de Privacidad</a>.
+        Las imágenes originales nunca se envían a OpenAI; solo el texto extraído.
+      </p>
+
+      <h3>4) Almacenamiento y seguridad</h3>
       <p>
         Los datos se almacenan en infraestructura segura alojada en <strong>Amazon Web Services (AWS)</strong>.
         Aplicamos medidas de seguridad razonables (por ejemplo, conexiones cifradas como HTTPS).
       </p>
 
-      <h3>4) Compartición de información</h3>
+      <h3>5) Compartición de información</h3>
       <p>No vendemos ni alquilamos datos personales. Podemos compartir información únicamente con proveedores necesarios para operar la app, como:</p>
       <ul>
-        <li>Amazon Web Services (hosting/infraestructura)</li>
-        <li>Google OAuth2 (autenticación)</li>
-        <li>Google Play Billing (pagos de créditos)</li>
+        <li><strong>Amazon Web Services</strong> – hosting e infraestructura</li>
+        <li><strong>OpenAI</strong> – generación de contenido con IA (solo texto extraído); <a href="https://openai.com/privacy" target="_blank" rel="noopener">Política de Privacidad</a></li>
+        <li><strong>Google OAuth2</strong> – autenticación opcional</li>
+        <li><strong>Google Play Billing</strong> – compra de créditos (versión Google Play)</li>
+        <li><strong>Stripe</strong> – compra de créditos (versión directa/web); <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Política de Privacidad</a></li>
       </ul>
 
-      <h3>5) Menores de edad y uso educativo</h3>
+      <h3>6) Menores de edad y uso educativo</h3>
       <p>
         EduMateAI no está dirigida específicamente a menores de 13 años, aunque puede ser utilizada por estudiantes.
         Si un padre/madre o tutor considera que un menor proporcionó información personal sin consentimiento, puede contactarnos para solicitar la eliminación.
       </p>
 
-      <h3>6) Conservación de datos</h3>
+      <h3>7) Conservación de datos</h3>
       <p>
         Conservamos el texto almacenado y los datos de cuenta mientras la cuenta permanezca activa o mientras sea necesario para brindar el servicio,
-        salvo que se solicite la eliminación.
+        salvo que se solicite la eliminación. Los registros de compras pueden conservarse hasta 5 años según lo exijan las regulaciones financieras aplicables.
       </p>
 
-      <h3>7) Eliminación de cuenta y datos</h3>
+      <h3>8) Tus derechos</h3>
+      <p>Tenés derecho a:</p>
+      <ul>
+        <li><strong>Acceder</strong> a los datos personales que conservamos sobre vos</li>
+        <li><strong>Corregir</strong> datos inexactos o incompletos</li>
+        <li><strong>Eliminar</strong> tu cuenta y los datos asociados</li>
+        <li><strong>Oponerte</strong> a ciertos tipos de procesamiento de tus datos</li>
+      </ul>
+      <p>Para ejercer estos derechos, contactanos en <strong>edu.mate.ai.cap@gmail.com</strong> o visitá nuestra <a href="account-deletion.html">página de eliminación de cuenta</a>.</p>
+
+      <h3>9) Eliminación de cuenta y datos</h3>
       <p>
-        Puedes solicitar la eliminación de tu cuenta y los datos asociados escribiendo a:
-        <strong>francisco.arcebenaglia@gmail.com</strong>.
-        Podremos pedir información adicional para verificar tu identidad antes de completar la eliminación.
+        Podés solicitar la eliminación de tu cuenta y los datos asociados escribiendo a:
+        <strong>edu.mate.ai.cap@gmail.com</strong>.
+        Visitá nuestra <a href="account-deletion.html">página de eliminación de cuenta</a> para más detalles.
       </p>
 
-      <h3>8) Cambios a esta política</h3>
+      <h3>10) Cambios a esta política</h3>
       <p>
-        Podemos actualizar esta política ocasionalmente. Los cambios se publicarán en esta misma página con la fecha de “Última actualización”.
+        Podemos actualizar esta política ocasionalmente. Los cambios se publicarán en esta misma página con la fecha de "Última actualización".
       </p>
     </section>
   </main>
 
   <footer class="muted">
-    <div>EduMateAI – Privacy Policy / Política de Privacidad</div>
+    <div>EduMateAI · <a href="account-deletion.html">Account Deletion / Eliminación de cuenta</a> · edu.mate.ai.cap@gmail.com</div>
   </footer>
 </body>
 </html>
